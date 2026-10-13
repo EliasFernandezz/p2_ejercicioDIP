@@ -18,7 +18,7 @@ namespace Ucu.Poo.Exercise
         /// </summary>
         public static void Main()
         {
-            Card card = new Card(Rank.Ace, Suit.Spades);
+            CardContent card = new Card(Rank.Ace, Suit.Spades);
 
             Print(card, new ConsolePrinter());
             Print(card, new FilePrinter());
@@ -29,7 +29,7 @@ namespace Ucu.Poo.Exercise
         /// </summary>
         /// <param name="card">La carta a imprimir.</param>
         /// <param name="printer">La impresora a usar.</param>
-        private static void Print(Card card, IPrinter printer)
+        private static void Print(CardContent card, IPrinter printer)
         {
             printer.PrintCard(card);
         }
